@@ -1,0 +1,6 @@
+# Core — Ultralytics pulls in torch, torchvision, opencv, numpy, etc.
+ultralytics>=8.3.0
+
+# Pin torch only if you need a specific CUDA build. Otherwise let ultralytics
+# resolve it. For a CUDA 12.x GPU machine you can instead do:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
