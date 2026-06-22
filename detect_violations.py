@@ -1,25 +1,4 @@
-"""
-detect_violations.py — Run the trained model and flag safety violations.
 
-A "violation" is decided two ways (both reported):
-
-1. DIRECT:  the model detects an explicit negative class
-            (no_helmet, no_goggle, no_gloves, no_boots).
-
-2. PERSON-LEVEL (optional, --associate):
-            for each detected Person box, check whether a helmet / vest box
-            overlaps it. A person with no overlapping helmet is flagged as a
-            likely "missing helmet" violation. This catches cases the model
-            labelled only as "Person" without an explicit no_* box.
-
-Works on a single image, a folder of images, a video file, or a webcam.
-
-Examples:
-    python detect_violations.py --weights runs/detect/ppe_base/weights/best.pt --source test.jpg
-    python detect_violations.py --weights best.pt --source ./images/ --associate
-    python detect_violations.py --weights best.pt --source video.mp4 --save
-    python detect_violations.py --weights best.pt --source 0          # webcam
-"""
 
 import argparse
 from pathlib import Path
