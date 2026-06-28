@@ -164,4 +164,4 @@ are **violation examples** (datasets with `no-helmet`/`no-vest` labels) and
 
 Built on [Ultralytics YOLO](https://github.com/ultralytics/ultralytics).
 Datasets: Ultralytics Construction-PPE, Roboflow Universe "Construction Site
-Safety". Check each dataset's own license before commercial use
+Safety". Check each dataset's own license before commercial use.
